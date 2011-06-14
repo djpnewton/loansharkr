@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ad_id">a14dd240a561f9f</string>
+    <string name="app_name">LoanSharkr</string>
+    <string name="motto">Loan shark your friends for fun and profit!</string>
+    <string name="no_clients">No Clients Yet</string>
+    <string name="menu_add_client">Add Client</string>
+    <string name="menu_view_open_loans">View Open Loans</string>
+    <string name="menu_view_closed_loans">View Closed Loans</string>
+    <string name="menu_delete_client">Delete Client</string>
+    <string name="menu_edit_client">Edit Client</string>
+    <string name="menu_view_client_loans">View Loans</string>
+    <string name="client">Name</string>
+    <string name="phone">Phone</string>
+    <string name="notes">Notes</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="edit_client">Edit Client</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="photo">Photo</string>
+    <string name="no_loans">No Loans Yet</string>
+    <string name="client_loans">Client Loans</string>
+    <string name="menu_add_loan">Add Loan</string>
+    <string name="menu_edit_loan">Edit Loan</string>
+    <string name="menu_delete_loan">Delete Loan</string>
+    <string name="loan_edit">Loan Edit</string>
+    <string name="set_date">Set Date</string>
+    <string name="loan_start">Loan Start</string>
+    <string name="loan_end">Loan End</string>
+    <string name="debt">Debt ($)</string>
+    <string name="weekly_interest">Weekly Interest (%, compounded weekly)</string>
+    <string name="total_to_pay">Total to pay on loan maturity:</string>
+    <string name="na">N/A</string>
+    <string name="loan_status">Loan Status</string>
+    <string name="loan_open">Open</string>
+    <string name="loan_paid">Paid</string>
+    <string name="loan_bad">Bad</string>
+    <string name="error_client_edit_form_no_client">Error: no client name specified.</string>
+    <string name="error_loan_edit_form">Error in loan edit form.</string>
+    <string name="error_loan_edit_form_no_debt">Error: no debt value specified.</string>
+    <string name="error_loan_edit_form_no_weeklyinterest">Error: no weekly interest value specified.</string>
+    <string name="error_db_update">Error updating database.</string>
+</resources>

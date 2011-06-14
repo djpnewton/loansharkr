@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5sp" android:paddingBottom="5sp">
+    <TextView android:id="@+id/date"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:textSize="9pt"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="5dp"/>
+    <ImageView
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/debt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="debt"
+            android:textSize="9pt"
+            android:layout_gravity="center_vertical"/>
+        <TextView android:id="@+id/total_repayment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="total repayment"
+            android:textSize="9pt"
+            android:textColor="#ff0000"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"/>
+    <ImageView android:id="@+id/icon"
+        android:src="@android:drawable/stat_sys_warning"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="5dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>

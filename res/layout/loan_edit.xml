@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_start"/>
+        <EditText android:id="@+id/loan_start_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" android:editable="false" android:enabled="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_end"/>
+        <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <EditText android:id="@+id/loan_end_edit"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="" android:editable="false" android:enabled="false"/>
+          <Button android:id="@+id/pick_date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/set_date"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debt"/>
+        <EditText android:id="@+id/debt_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numeric="decimal"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weekly_interest"/>
+        <EditText android:id="@+id/weekly_interest_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numeric="decimal"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_status"/>
+        <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioGroup1" android:orientation="horizontal">
+            <RadioButton android:id="@+id/loan_open" android:text="@string/loan_open" android:layout_height="wrap_content" android:checked="true" android:layout_width="wrap_content"></RadioButton>
+            <RadioButton android:id="@+id/loan_paid" android:text="@string/loan_paid" android:layout_height="wrap_content" android:layout_width="wrap_content"></RadioButton>
+            <RadioButton android:id="@+id/loan_bad" android:text="@string/loan_bad" android:layout_height="wrap_content" android:layout_width="wrap_content"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button android:id="@+id/save_loan_changes"
+        android:text="@string/save_changes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#DDFFDD"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_to_pay"/>
+        <TextView android:id="@+id/total_payment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
